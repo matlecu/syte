@@ -1,6 +1,5 @@
 
 function setupMywork(url, el) {
-	console.log('BITE');
 	var href = el.href;
 
 	if ($('#mywork-profile').length > 0) {
@@ -39,6 +38,4 @@ function setupMywork(url, el) {
 		});
 
 	return;
-
-	window.location = href;
 }
