@@ -29,6 +29,7 @@
   <nav>
     <ul class="main-nav">
       <li><a href="/" id="home-link">Blog</a></li>
+      <li><a href="/mywork" id="mywork-link">My Work</a></li>
       <li><a href="http://twitter.com/#!/matlecu" id="twitter-link">Twitter</a></li>
       <li><a href="http://github.com/matlecu" id="github-link">Github</a></li>
       <li><a href="http://stackoverflow.com/users/1026912/matlecu" id="stackoverflow-link">StackOverflow</a></li>
@@ -43,6 +44,7 @@
       <li><a href="http://steamcommunity.com/id/steamshortname" id="steam-link">Steam</a></li>
       <li><a href="http://www.flickr.com/photos/manavo" id="flickr-link">Flickr</a></li>
       {% endcomment %}
+      <li><a href="/static/files/mathiaslecuyer-cv.pdf" download="mathiaslecuyer-cv.pdf">Resume</a></li>
       <li><a href="mailto:mathias@lecuyer.me?subject=Hello" id="contact-link">Contact</a></li>
     </ul>
   </nav>
@@ -59,7 +61,8 @@
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript">
-var twitter_integration_enabled = {% if TWITTER_INTEGRATION_ENABLED %}true{% else %}false{% endif %},
+var mywork_integration_enabled = {% if MYWORK_INTEGRATION_ENABLED %}true{% else %}false{% endif %},
+    twitter_integration_enabled = {% if TWITTER_INTEGRATION_ENABLED %}true{% else %}false{% endif %},
     github_integration_enabled = {% if GITHUB_INTEGRATION_ENABLED %}true{% else %}false{% endif %},
     dribbble_integration_enabled = {% if DRIBBBLE_INTEGRATION_ENABLED %}true{% else %}false{% endif %},
     instagram_integration_enabled = {% if INSTAGRAM_INTEGRATION_ENABLED %}true{% else %}false{% endif %},
@@ -99,6 +102,7 @@ var twitter_integration_enabled = {% if TWITTER_INTEGRATION_ENABLED %}true{% els
 <script src="{{ MEDIA_URL }}js/components/blog-posts.js"></script>
 <script src="{{ MEDIA_URL }}js/components/links.js"></script>
 
+{% if MYWORK_INTEGRATION_ENABLED %}<script src="{{ MEDIA_URL }}js/components/mywork.js"></script>{% endif %}
 {% if TWITTER_INTEGRATION_ENABLED %}<script src="{{ MEDIA_URL }}js/components/twitter.js"></script>{% endif %}
 {% if GITHUB_INTEGRATION_ENABLED %}<script src="{{ MEDIA_URL }}js/components/github.js"></script>{% endif %}
 {% if DRIBBBLE_INTEGRATION_ENABLED %}<script src="{{ MEDIA_URL }}js/components/dribbble.js"></script>{% endif %}

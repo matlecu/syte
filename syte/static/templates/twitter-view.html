@@ -31,21 +31,21 @@
   {{/with}}
   <ul class="profile-tweets">
     {{#each tweets}}
-      <li>
-        {{#with user }}
-        <a href="http://twitter.com/#!/{{ screen_name }}" class="tweet-title">
-          <img src="{{ profile_image_url }}" alt="{{ name }}" />
-          <strong>{{ name }}</strong>
-          <span>@{{ screen_name }}</span>
-        </a>
-        {{/with}}
-        <p class="tweet-text">
+    <li>
+      {{#with user }}
+      <a href="http://twitter.com/#!/{{ screen_name }}" class="tweet-title">
+        <img src="{{ profile_image_url }}" alt="{{ name }}" />
+        <strong>{{ name }}</strong>
+        <span>@{{ screen_name }}</span>
+      </a>
+      {{/with}}
+      <p class="tweet-text">
         {{{ f_text }}}
-        </p>
-        <p class="tweet-date">
-          {{ formated_date }}
-        </p>
-      </li>
+      </p>
+      <p class="tweet-date">
+        {{ formated_date }}
+      </p>
+    </li>
     {{/each}}
   </ul>
 </div>

@@ -59,6 +59,9 @@ def compress_js():
         'components/links.js',
     ]
 
+    if settings.MYWORK_INTEGRATION_ENABLED:
+        js_files.append('components/mywork.js')
+
     if settings.TWITTER_INTEGRATION_ENABLED:
         js_files.append('components/twitter.js')
 

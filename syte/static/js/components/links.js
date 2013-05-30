@@ -1,6 +1,7 @@
 var $url;
 
 var allComponents = [
+  'mywork',
   'instagram',
   'twitter',
   'github',
@@ -32,6 +33,9 @@ function setupLinks() {
 
       if (this.id == 'home-link' && window.location.pathname == '/') {
         adjustSelection('home');
+      }
+      if (this.id == 'mywork-link' && mywork_integration_enabled) {
+        adjustSelection('mywork', setupMywork.bind(this, url, this));
       }
       else if(this.id == 'instagram-link' && instagram_integration_enabled) {
         adjustSelection('instagram', setupInstagram.bind(this, this));

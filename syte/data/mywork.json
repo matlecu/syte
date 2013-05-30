@@ -1,0 +1,23 @@
+[
+	{"title": "Research",
+	 "baseline": "My research projects, mainly at Columbia University, NYC",
+	 "items": [{"name": "Dispatch",
+	 			"picture": "static/imgs/dispatch.png",
+	 			"link": "http://dispatchapp.wpengine.com/",
+				"text": "Dispatch is a secure communication and publication tool for journalists."}
+				]
+	},
+	{"title": "Projects",
+	 "baseline": "Some side projects I've been working on.",
+	 "items": [{"name": "Pixlife",
+	 			"picture": "static/imgs/pixlife.png",
+	 			"link": "https://itunes.apple.com/app/pixlife/id645195547?mt=8",
+				"text": "An iOS game. Uses cocos2d and box2d."
+				},
+				{"name": "iBulb",
+	 			"picture": "static/imgs/ibulb.jpg",
+	 			"link": "https://itunes.apple.com/app/ibulb-led-flashlight/id383024328?mt=8",
+				"text": "A complete and beautiful iOS torch app."
+				}]
+	}
+]

@@ -16,6 +16,12 @@ urlpatterns = patterns('',
     url(r'^/?$', 'syte.views.home.home'),
 )
 
+#MyWork Integration
+if settings.MYWORK_INTEGRATION_ENABLED:
+    urlpatterns += patterns('',
+        url(r'^mywork/?$', 'syte.views.mywork.mywork'),
+    )
+
 #Twitter Integration
 if settings.TWITTER_INTEGRATION_ENABLED:
     urlpatterns += patterns('',
